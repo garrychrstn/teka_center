@@ -1,0 +1,84 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>TEKA Center</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'index/index.css' %}">
+        <script src="{% static 'index/index.js' %}" async></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <div id="logo">
+                <!-- <div>
+                    <img src="assets/forteka.png' %}" width="60px">
+                </div> -->
+                <div id="title">
+                    <span>TEKA Center</span>
+                    <br>
+                    <span>Pusat informasi forteka</span>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">About TK</a></li>
+                    <li><a href="#">About HMP-TK</a></li>
+                    <li><a href="https://discord.gg/agWqJjSzFJ" target="_blank">Discord</a></li>
+                </ul>
+            </nav>
+        </header>
+        <article>
+            <section id="showcase">
+                <div>
+                    <img src="{% static 'index/assets/forteka.png' %}" width="300px">
+                </div>
+                <h3>media forum D3 Teknik Komputer</h3>
+                <p>Universitas Duta Bangsa Surakarta</p>
+            </section>
+            <section id="menu">
+                <ul id="option">
+                    <li><button onClick="showEve()"/>Event</li>
+                    <li class="space"> | </li>
+                    <li><button onClick="showAct()"/>Activities</li>
+                </ul>
+                <div id="event">
+                    <div class="sec-page">
+                        <img src="{% static 'index/assets/event1.png' %}" width="150px">
+                        <div class="desc">
+                            <h1><a href="#">WORKSHOP NETWORK SECURITY: “DASAR DASAR MEMULAI PENTESTING SEBAGAI JENJANG KARIR”</a></h1>
+                            <p class="date">Sabtu, 15 November 2022</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque amet reiciendis, labore laudantium illo culpa quod blanditiis. Sed dolores debitis dignissimos?</p>
+                        </div>
+                    </div>
+                    <div class="sec-page">
+                        <img src="{% static 'index/assets/event2.png' %}" width="150px">
+                        <div class="desc">
+                            <h1><a href="#">SUMPAH PEMUDA DI UNIVERSITAS DUTA BANGSA</a></h1>
+                            <p class="date">Sabtu, 28 Oktober 2022</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque amet reiciendis, labore laudantium illo culpa quod blanditiis. </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="activities">
+                    <div class="sec-page">
+                        <img src="{% static 'index/assets/act1.png' %}" width="150px">
+                        <div class="desc">
+                            <h1><a href="#">RINCIAN ARDUINO UNO R3</a></h1>
+                            <p class="date">Sabtu, 15 November 2022</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque amet reiciendis, labore laudantium illo culpa quod blanditiis. Sed dolores debitis dignissimos? Voluptas sapiente qui deleniti praesentium quod temporibus est quos.</p>
+                        </div>
+                    </div>
+                    <div class="sec-page">
+                        <img src="{% static 'index/assets/act2.png' %}" width="150px">
+                        <div class="desc">
+                            <h1><a href="#">PROJEK MICROCONTROLLERS SEDERHANA</a></h1>
+                            <p class="date">Sabtu, 28 Oktober 2022</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque amet reiciendis, labore laudantium illo culpa quod blanditiis. </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </article>
+    </body>
+</html>

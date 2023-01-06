@@ -1,0 +1,150 @@
+
+
+/*Don't Change*/
+
+*       { margin: 0; padding: 0;                        }
+li      { list-style: none;                                 }
+body    { background: #ffffff;                   }
+a       { 
+    text-decoration: none; 
+    font-style: none; 
+    font-size: 20px;
+    font-family: "Aqum";
+    color: rgb(41, 40, 40);
+}
+
+/*Header*/
+header {
+    width: 70%;
+    margin: auto;
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px solid #2b3d89;
+}
+
+#logo {
+    display: flex;
+}
+#title {
+    margin-top: 11.5px;
+    font-family: "Aqum";
+    margin-left: 7px;
+    font-weight: bold;
+}
+header {
+    padding-bottom: 10px;
+}
+nav ul {
+    display: flex;
+    margin-top: 32px;
+}
+header nav li a:hover {
+    border-bottom: black 0.5px solid;
+    padding-bottom: 2px;
+}
+header nav li {
+    margin-left: 40px;
+    box-sizing: border-box;
+    padding: 5px;
+}
+header nav a {
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+/*Article*/
+article {
+    width:70%;
+    margin: auto;
+    padding-top: 40px;
+}
+article ul {
+    font-family: "Aqum";
+    font-size: 15px;
+    justify-content: space-around;
+    width: 40%;
+    background: rgb(189, 188, 188);
+    margin: auto;
+    max-width: 600px;
+    display: flex;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+section {
+    margin-bottom: 50px;
+}
+#showcase {
+    margin: auto;
+    background-image: url("assets/pcb.png");
+    background-position: center;
+    padding: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-family: "Aqum";
+}
+
+#showcase h1 {
+    font-size: 70px;
+    font-weight: lighter;
+}
+
+#option {
+    padding: 5px;
+    background-color: white;
+    color: black;
+}
+
+#option li:not(.space) {
+    padding: 5px;
+    background: grey;
+}
+#option button {
+    font-family: "Aqum";
+    font-size: 15px;
+    font-weight: normal;
+    background: none;
+    border: none;
+}
+#option button:hover {
+    color: white;
+}
+
+/*article*/
+#event, #activities {
+    padding: 50px;
+    display: none;
+}
+#event { display: block }
+.sec-page {
+    padding: 15px;
+    border: 2px dotted black;
+    border-radius: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+.sec-page img{
+    border-radius: 20px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.sec-page p {
+    text-align: justify;
+}
+.date {
+    color: red;
+}
+@media screen and (max-width: 1100px) {
+    article, header {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 700px) {
+    .sec-page { display: block; }
+    .sec-page img {
+        margin-left: auto; margin-right: auto;
+    }
+}
